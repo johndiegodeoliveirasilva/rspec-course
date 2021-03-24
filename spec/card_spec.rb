@@ -12,13 +12,14 @@ class Card
 end
 
 RSpec.describe 'Card' do
+  before do
+    @card = Card.new('Ace', 'Spaces')
+  end
   it 'has a rank' do
-    card = Card.new('Ace', 'Spaces')
-    expect(card.rank).to eq('Ace')
+    expect(@card.rank).to eq('Ace')
   end
 
   it 'has a suit' do
-    card = Card.new('Ace', 'Spaces')
-    expect(card.suit).to eq('Spaces')
+    expect(@card.suit).to eq('Spaces')
   end
 end
