@@ -11,4 +11,5 @@ RSpec.describe 'all matcher' do
     it { is_expected.to all(be_odd) }
     it { is_expected.to all(be < 10) }
   end
+
 end
